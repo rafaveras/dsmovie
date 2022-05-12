@@ -1,17 +1,31 @@
 @import url('https://fonts.googleapis.com/css2? family= Open+Sans:ital,wght@0,300;0,400;1,700 & display=swap');
 </style>
 
+:root {
+    --bg-gray: #ddd;
+    --color-primary: violet;
+    --white: #fff;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
 html, body {
-    background-color:#ddd ;
+    background-color: var(--bg-gray);
 }
 
 header { 
-    background-color: violet ;
-    color: white;
+    background-color: violet;
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
 }
 
 nav{
@@ -19,7 +33,25 @@ nav{
     align-items: center;
     justify-content: space-between ;
 }
+
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+nav a {
+    font-size:12p;
+    font-weight:400;
+}
 a, a:hover {
     text-decoration: none;
     color: unset;
+}
+
+.dsmovie-contact-container{
+   display:flex;
+   align-items: center;
+}
+
+.dsmovie-contact-container img{
+   margin-right:10px;
 }
